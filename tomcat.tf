@@ -1,5 +1,5 @@
 resource "aws_instance" "Dev" {
-  ami           = "ami-08fdec01f5df9998f"
+  ami           = "ami-ami-007855ac798b5175e"
   instance_type = "t2.micro"
   key_name      = "KEYNAME"
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
@@ -13,7 +13,7 @@ resource "aws_instance" "Dev" {
 }
 
 resource "aws_instance" "QA" {
-  ami           = "ami-08fdec01f5df9998f"
+  ami           = "ami-ami-007855ac798b5175e"
   instance_type = "t2.small"
   key_name      = "KEYNAME"
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
@@ -28,7 +28,7 @@ resource "aws_instance" "QA" {
 
 
 resource "aws_instance" "Prod" {
-  ami           = "ami-08fdec01f5df9998f"
+  ami           = "ami-ami-007855ac798b5175e"
   instance_type = "t2.medium"
   key_name      = "KEYNAME"
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]

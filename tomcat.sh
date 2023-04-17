@@ -19,5 +19,6 @@ EOF'
 
 # Restart Tomcat service
 sudo systemctl restart tomcat9
+DD_API_KEY=434e0ed5996eb00fcf38330241ed4350 DD_SITE="us5.datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)"
 
 done

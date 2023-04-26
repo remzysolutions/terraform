@@ -13,4 +13,6 @@ sudo systemctl start artifactory
 sudo systemctl enable artifactory
 sudo systemctl status artifactory
 #delete this line and input your datadog api key inside
+
+
 done

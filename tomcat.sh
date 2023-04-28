@@ -6,7 +6,7 @@
   sudo apt-get install tomcat9-docs tomcat9-examples tomcat9-admin -y
   sudo cp -r /usr/share/tomcat9-admin/* /var/lib/tomcat9/webapps/ -v
 
-  sudo bash -c 'cat > /var/lib/tomcat9/conf/tomcat-users.xml <<EOF
+  sudo bash -c 'cat > /etc/tomcat9/tomcat-users.xml <<EOF
 <?xml version="1.0" encoding="UTF-9"?>
 <tomcat-users xmlns="http://tomcat.apache.org/xml"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

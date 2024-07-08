@@ -5,7 +5,7 @@ provider "aws" {
 
 
 resource "aws_instance" "ec2_jenkins" {
-  ami           = "ami-007855ac798b5175e"
+  ami           = "ami-"
   instance_type = "t2.xlarge"
   key_name      = "keyname"
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
@@ -19,7 +19,7 @@ resource "aws_instance" "ec2_jenkins" {
 }
 
 resource "aws_instance" "ec2_sonarqube" {
-  ami           = "ami-007855ac798b5175e"
+  ami           = "ami-"
   instance_type = "t2.medium"
   key_name      = "keyname"
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
@@ -34,7 +34,7 @@ resource "aws_instance" "ec2_sonarqube" {
 
 
 resource "aws_instance" "ec2_artifactory" {
-  ami           = "ami-007855ac798b5175e"
+  ami           = "ami-"
   instance_type = "t2.medium"
   key_name      = "keyname"
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
